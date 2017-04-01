@@ -1,0 +1,36 @@
+﻿body {
+
+    background-color:rgb(91, 2, 129);
+}
+
+#list{
+   
+    list-style:none;
+    text-align:center;
+    font-size:larger;
+    text-decoration:none;
+    background-color:#030458;
+}
+#l1:hover,#l2:hover,#l3:hover,#l4:hover,#l5:hover,#l6:hover,#l7:hover,#l8:hover{
+    background-color:#030458;
+    font-weight:bold;
+    font-size:larger;
+}
+#l1,#l2,#l3,#l4,#l5,#l6,#l7,#l8{
+    float:left;
+    text-align:center;
+    text-decoration:none;
+    background-color:dodgerblue;
+    width:15%;
+    height:30px;
+    border-color:red;
+    border-radius:10px 10px 10px 10px;
+    
+}
+#middle{
+    background-color:rgb(125, 15, 171);
+    height:500px;
+}
+#bottom{
+    text-align:center;
+}

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Master.master.vb" Inherits="BudgetSystem.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="masterStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 align="center"><b><i>Future Mobile Budgetant</i></b></h1>
+        <div>
+            <ul id="list">
+                 <li id ="l1"><a href="Home.aspx">Home</a></li>
+                <li id ="l2"><a href="SignIn.aspx">Sign In</a></li>
+                 <li id ="l3"><a href="AboutUs.aspx">About Us</a></li>
+                 <li id ="l4"><a href="HowItWorks.aspx">How it Works</a></li>
+                <li id ="l5"><a href="Login.aspx">Login</a></li>
+                <li id ="l6" runat ="server" visible ="false" ><a href="Notification.aspx">Notifications</a></li>
+                <li id ="L7" runat ="server" visible ="false" ><a href="Statistics.aspx">View Statistics</a></li>
+                <li id ="l8" runat ="server" visible ="false" ><a href="Assistance.aspx">Inconsistent budgeting problem?</a></li>
+
+              <%--   <li id ="l5"><a href="Login.aspx">View Budget</a></li>
+                 <li id ="l5"><a href="Login.aspx">Create new Budget</a></li>
+                 <li id ="l5"><a href="Login.aspx">View </a></li>--%>
+            </ul>
+        </div>
+        <br />
+        <br />
+        <hr />
+    <div id="middle">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="bottom">
+            @ACADEMY OF COMPUTER SCIENCE AND SOFTWARE ENGINEERING
+        </div>
+    </form>
+</body>
+</html>
