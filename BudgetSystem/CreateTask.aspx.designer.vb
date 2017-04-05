@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class EditTask
+Partial Public Class CreateTask
     
     '''<summary>
     '''ddCategory control.

@@ -12,5 +12,5 @@ Option Explicit On
 
 
 
-Partial Public Class SignIn
+Partial Public Class RemoveEach
 End Class

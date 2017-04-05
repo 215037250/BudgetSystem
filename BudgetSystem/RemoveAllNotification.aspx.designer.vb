@@ -11,32 +11,32 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Notification
+Partial Public Class RemoveAllNotification
     
     '''<summary>
-    '''Panel2 control.
+    '''lblWarning control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents lblWarning As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtMsg control.
+    '''btnCancel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtMsg As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnCancel As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''btnReschedule control.
+    '''btnOk control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnReschedule As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnOk As Global.System.Web.UI.WebControls.Button
 End Class

@@ -12,5 +12,5 @@ Option Explicit On
 
 
 
-Partial Public Class Statistics
+Partial Public Class Logout
 End Class

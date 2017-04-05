@@ -54,6 +54,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -66,8 +67,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -95,14 +95,35 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="Assistance.aspx" />
     <Content Include="Budget.aspx" />
+    <Content Include="CreateAcc.aspx" />
+    <Content Include="CreateBudget.aspx" />
+    <Content Include="CreateTask.aspx" />
     <Content Include="EditTask.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HowItWorks.aspx" />
+    <Content Include="Images\CloseMsg.gif" />
+    <Content Include="Images\Default.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\Google-Play-Store.jpg" />
+    <Content Include="Images\Home.jpg" />
+    <Content Include="Images\Insta.png" />
+    <Content Include="Images\Instagram.png" />
+    <Content Include="Images\Linkedin.png" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\OpenMsg.png" />
+    <Content Include="Images\RemoveAll.png" />
+    <Content Include="Images\RemoveEach.png" />
+    <Content Include="Images\Twi.png" />
+    <Content Include="Images\twitter.jpg" />
     <Content Include="Login.aspx" />
-    <Content Include="masterStyle.css" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Message.aspx" />
+    <Content Include="RemoveAllNotification.aspx" />
+    <Content Include="RemoveEach.aspx" />
+    <Content Include="Stats.aspx" />
+    <Content Include="Styles\masterStyle.css" />
     <Content Include="Notification.aspx" />
-    <Content Include="SignIn.aspx" />
-    <Content Include="Statistics.aspx" />
+    <Content Include="Styles\Stats.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +146,27 @@
     </Compile>
     <Compile Include="Budget.aspx.vb">
       <DependentUpon>Budget.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CreateAcc.aspx.designer.vb">
+      <DependentUpon>CreateAcc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAcc.aspx.vb">
+      <DependentUpon>CreateAcc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CreateBudget.aspx.designer.vb">
+      <DependentUpon>CreateBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBudget.aspx.vb">
+      <DependentUpon>CreateBudget.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CreateTask.aspx.designer.vb">
+      <DependentUpon>CreateTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTask.aspx.vb">
+      <DependentUpon>CreateTask.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="EditTask.aspx.designer.vb">
@@ -155,12 +197,26 @@
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Master.Master.designer.vb">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.vb">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message.aspx.designer.vb">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Message.aspx.vb">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -188,18 +244,25 @@
       <DependentUpon>Notification.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="SignIn.aspx.designer.vb">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="RemoveAllNotification.aspx.designer.vb">
+      <DependentUpon>RemoveAllNotification.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SignIn.aspx.vb">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="RemoveAllNotification.aspx.vb">
+      <DependentUpon>RemoveAllNotification.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Statistics.aspx.designer.vb">
-      <DependentUpon>Statistics.aspx</DependentUpon>
+    <Compile Include="RemoveEach.aspx.designer.vb">
+      <DependentUpon>RemoveEach.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Statistics.aspx.vb">
-      <DependentUpon>Statistics.aspx</DependentUpon>
+    <Compile Include="RemoveEach.aspx.vb">
+      <DependentUpon>RemoveEach.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Stats.aspx.designer.vb">
+      <DependentUpon>Stats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.aspx.vb">
+      <DependentUpon>Stats.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

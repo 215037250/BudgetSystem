@@ -11,32 +11,50 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Notification
+Partial Public Class CreateBudget
     
     '''<summary>
-    '''Panel2 control.
+    '''txtBname control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents txtBname As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''txtMsg control.
+    '''txtPnumber control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtMsg As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPnumber As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''btnReschedule control.
+    '''DropDownList1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnReschedule As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtAmount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtAmount As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''btnset control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnset As Global.System.Web.UI.WebControls.Button
 End Class

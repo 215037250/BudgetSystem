@@ -1,0 +1,55 @@
+﻿.linkColor
+{
+    color:#428bca;
+}
+.this_months_progress
+{
+    width:100%;
+    height:200px;
+    border:3px solid black;
+    border-color:#909090;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+p, h1, h2, h3, h4, h5, h6, a
+{
+     font-family:Arial, Helvetica, sans-serif;
+}
+.pBar1
+{
+    border:0;
+    border-top:15px solid #0094ff;
+    border-bottom:2px solid #808080;
+    width:250px;
+    margin-left:250px;
+}
+.pBar2
+{
+    border:0;
+    border-top:15px solid #0094ff;
+    border-bottom:2px solid #808080;
+    width:550px;
+    margin-left:250px;
+}
+.statsSection
+{
+    width:100%;   
+    border:3px solid black;
+    border-color:#808080;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.tip1
+{
+    width:100px;
+    border:3px solid black;
+    border-color:#808080;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}

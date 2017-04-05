@@ -11,86 +11,86 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class EditTask
+Partial Public Class Stats
     
     '''<summary>
-    '''ddCategory control.
+    '''ddlPeriod control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddCategory As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlPeriod As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtOther control.
+    '''tProfit control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtOther As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents tProfit As Global.System.Web.UI.HtmlControls.HtmlTable
     
     '''<summary>
-    '''txtName control.
+    '''chrtProfit control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents chrtProfit As Global.System.Web.UI.DataVisualization.Charting.Chart
     
     '''<summary>
-    '''checkYes control.
+    '''chrtPercentage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents checkYes As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents chrtPercentage As Global.System.Web.UI.DataVisualization.Charting.Chart
     
     '''<summary>
-    '''checkNo control.
+    '''lblThanks control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents checkNo As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents lblThanks As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtDate control.
+    '''btnDownload control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnDownload As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''txtAmount control.
+    '''lblSure control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtAmount As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblSure As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''ddPriority control.
+    '''resetLink control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddPriority As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents resetLink As Global.System.Web.UI.HtmlControls.HtmlAnchor
     
     '''<summary>
-    '''btnDone control.
+    '''btnReset control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnDone As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnReset As Global.System.Web.UI.WebControls.Button
 End Class

@@ -1,83 +1,88 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Master.Master" CodeBehind="Login.aspx.vb" Inherits="BudgetSystem.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
+        .auto-style111 {
             width: 80%;
             height: 134px;
         }
-        .auto-style3 {
+        .auto-style311 {
             width: 171px;
         }
-        .auto-style4 {
+        .auto-style411 {
             width: 154px;
         }
-        .auto-style5 {
+        .auto-style511 {
             text-align: right;
             width: 434px;
         }
-        .auto-style6 {
+        .auto-style611 {
             width: 434px;
             height: 30px;
         }
-        .auto-style7 {
+        .auto-style711 {
             text-align: center;
         }
-        .auto-style8 {
-            width: 171px;
-            text-align: left;
-            height: 30px;
-        }
-        .auto-style9 {
+        .auto-style911 {
             width: 154px;
             height: 30px;
         }
-        .auto-style10 {
+        .auto-style101 {
             width: 292px;
             height:5px;
             color:red;
         }
-    .auto-style11 {
+    .auto-style111 {
         width: 195px;
     }
+        .auto-style151 {
+            width: 68%;
+            margin-left: 1px;
+        }
+        .auto-style161 {
+            text-align: right;
+            width: 329px;
+        }
+        .auto-style181 {
+            width: 475px;
+            border-radius :5px 5px 5px 5px;
+
+        }
+        .auto-style191 {
+            text-align: center;
+            font-size: x-large;
+        }
+        .auto-style221 {
+            width: 329px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2 align ="Center"><b>User Credentials</h2>
-    <hr class="auto-style11" />
-    <div class="auto-style7">
-        <asp:Panel ID="Panel1" runat="server" Height="154px">
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style5">
-                        <asp:Label ID="lblUsername" runat="server" Text="Username :"></asp:Label>
-                    </td>
-                    <td class="auto-style3">
-                        <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">
-                        <asp:Label ID="lblPass" runat="server" Text="Password :"></asp:Label>
-                    </td>
-                    <td class="auto-style3">
-                        <asp:TextBox ID="txtPass" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                    <td class="auto-style4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style8"><b>
-                        <asp:Button ID="btnLogin" runat="server" BackColor="#660033" ForeColor="Blue" Text="Login" Width="79px" />
-                        </b></td>
-                    <td class="auto-style9"></td>
-                </tr>
-            </table>
-            <hr class="auto-style10"/>
-        </asp:Panel>
-    </div>
-    <br />
-
-    </b>
-
+    <br /> <br />
+    <table align="center">
+        <tr>
+            <td class="auto-style191" colspan="2"><strong>Login<br /><hr />
+                </strong></td>
+            
+        </tr>
+        <tr>
+            <td class="auto-style161">Username:</td>
+            
+            <td class="auto-style181">
+                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style161">Password:</td>
+            <td class="auto-style181">
+                <asp:TextBox ID="txtpass" runat="server" TextMode="Password"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style221">&nbsp;</td>
+            <td class="auto-style181">
+                <asp:Button ID="btnLogin" runat="server" Text="Login" Width="72px" />
+            </td>
+        </tr>
+    </table>
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 </asp:Content>

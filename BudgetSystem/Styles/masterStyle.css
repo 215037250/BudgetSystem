@@ -1,0 +1,50 @@
+﻿#body{
+    background-color:#ffffff;
+    font-family :'Lucida Sans';
+}
+#list{
+    list-style:none;
+    text-align:center;
+    font-size:larger;
+    text-decoration:none;
+}
+#l1:hover,#l2:hover,#l3:hover,#l4:hover,#l5:hover,#l6:hover,#l7:hover,#l8:hover,#l9:hover,#Lt:hover {
+    background-color:#4dc3ba;
+}
+a{
+   text-decoration:none;
+   color:black;
+}
+#l1,#l2,#l3,#l4,#l5,#l6,#l7,#l8,#l9,#Lt{
+    float:left;
+    text-align:center;
+    text-decoration:none;
+    width:18%;
+    height:30px;
+    border-color:red;
+    border-radius:10px 10px 10px 10px;
+}
+#middle{
+    background-color:#ffffff;
+    
+}
+#bottom{
+    text-align:center;
+    background-color:black;
+    height :150px;
+}
+#btnSearch{
+    border-radius :5px 5px 5px 5px;
+}
+#ContentPlaceHolder3{
+    background-color :rgb(128, 128, 128);
+    border-color :rgb(128, 128, 128);
+    border-width : 5px;
+    border-radius :5px;
+}
+#lblM1:hover ,#lblM2:hover ,#lblM3:hover {
+  background-color:#4dc3ba;
+}
+#lblM1 :active{
+    background-color:aliceblue ;
+}

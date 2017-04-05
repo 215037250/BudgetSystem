@@ -7,37 +7,218 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="masterStyle.css" rel="stylesheet" />
+    <link href="Styles/masterStyle.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 10px;
+            text-align: left;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 79px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .auto-style3 {
+            width: 496px;
+            font-weight: bold;
+            text-align: right;
+            height: 39px;
+        }
+        .auto-style4 {
+            width: 432px;
+        }
+        .auto-style5 {
+            text-align: right;
+        }
+        .auto-style6 {
+            width: 100%;
+            color: #FFFFFF;
+            height: 148px;
+        }
+        .auto-style7 {
+            width: 243px;
+        }
+        .auto-style10 {
+            height: 23px;
+        }
+        .auto-style12 {
+            margin-left: 76px;
+        }
+        .auto-style14 {
+            width: 495px;
+            margin-left: 173px;
+        }
+        .auto-style15 {
+            width: 100%;
+            height :100%;
+        }
+        .auto-style17 {
+            height: 23px;
+            width: 268435456px;
+        }
+        .auto-style18{
+             width: 258px;
+            height: 237px;
+            background-color :dimgray ;
+            border-radius : 5px 5px 5px 5px;
+            border-width : 5px;
+        }
+        .auto-style19 {
+            height: 7px;
+            text-align: right;
+        }
+        .auto-style20 {
+            height: 7px;
+            width: 28px;
+        }
+        .auto-style21 {
+            width: 130px;
+        }
+        </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1 align="center"><b><i>Future Mobile Budgetant</i></b></h1>
+        
+        
+        <table align="center" class="auto-style2">
+            <tr>
+                <td class="auto-style1">
+                    <asp:Image ID="logo" runat="server" Height="90px" Width="173px" ImageUrl="~/Images/Logo.jpg" />
+                </td>
+                <td class="auto-style4"><h1 class="auto-style3">Budget Ant<hr class="auto-style14" /></h1>
+                 
+                </td>
+                <td class="auto-style5">
+                    <asp:Panel ID="Panel1" runat="server" Width="223px" CssClass="auto-style12" Height="29px">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server" Width="78px"></asp:TextBox>
+                        &nbsp;
+                        <asp:Button ID="btnSearch" runat="server" Text="Search" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:Panel>
+                </td>
+                <td class="auto-style5">
+                    <asp:Image ID="imgPP" runat="server" Height="90px" Width="100px" Visible="false"  ImageUrl="~/Images/Default.png" />
+                </td>
+            </tr>
+        </table>
+        
         <div>
             <ul id="list">
-                 <li id ="l1"><a href="Home.aspx">Home</a></li>
-                <li id ="l2"><a href="SignIn.aspx">Sign In</a></li>
-                 <li id ="l3"><a href="AboutUs.aspx">About Us</a></li>
-                 <li id ="l4"><a href="HowItWorks.aspx">How it Works</a></li>
-                <li id ="l5"><a href="Login.aspx">Login</a></li>
-                <li id ="l6" runat ="server" visible ="false" ><a href="Notification.aspx">Notifications</a></li>
-                <li id ="L7" runat ="server" visible ="false" ><a href="Statistics.aspx">View Statistics</a></li>
-                <li id ="l8" runat ="server" visible ="false" ><a href="Assistance.aspx">Inconsistent budgeting problem?</a></li>
-
-              <%--   <li id ="l5"><a href="Login.aspx">View Budget</a></li>
-                 <li id ="l5"><a href="Login.aspx">Create new Budget</a></li>
-                 <li id ="l5"><a href="Login.aspx">View </a></li>--%>
+                <li id ="l1" runat ="server" visible ="true"><a href="Home.aspx">Home</a></li>
+               <%-- <li id ="l3" runat ="server" visible ="true"><a href="AboutUs.aspx">About Us</a></li>
+                <li id ="l4" runat ="server" visible ="true"><a href="HowItWorks.aspx">How it Works</a></li>--%>
+                <li id ="l5" runat ="server" visible ="true"><a href="Login.aspx">Login</a></li>
+                <li id ="l2" runat ="server" visible ="true"><a href="CreateAcc.aspx">Create Acount</a></li>
+                <li id ="l9" runat ="server" visible ="false" ><a href="Budget.aspx">My Budget</a></li>
+                <li id ="l6" runat ="server" visible ="false" ><a href="Notification.aspx">Notifications<asp:Label ID="lblNo" runat="server" Text="(3)" Visible ="false" ></asp:Label></a></li>
+                <li id ="L7" runat ="server" visible ="false" ><a href="Stats.aspx">My Stats</a></li>
+                <%--<li id ="l8" runat ="server" visible ="false" ><a href="Assistance.aspx">Inconsistent budgeting problem?</a></li>--%>
+                <li id ="l8" runat ="server" visible ="false"><a href="Logout.aspx">Logout</a></li>
+                <li id ="Lt" runat ="server" visible ="false"><a href="CreateBudget.aspx">Create Budget</a></li>
             </ul>
         </div>
         <br />
         <br />
         <hr />
     <div id="middle">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <table>
+            <tr>
+                <td> <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" Visible ="false" >
+                    <table class="auto-style18">
+                        <tr>
+                            <td colspan="3" class="auto-style20">
+                                <asp:Label ID="lblInbox" runat="server" Text="Inbox(3)"></asp:Label>
+                                <hr class="auto-style21" /></td>
+                            <td colspan="4" class="auto-style19">
+                                <asp:ImageButton ID="imgRemove" runat="server" ImageUrl="~/Images/RemoveAll.png" Width="25px" Height="30px" />
+                            </td>
+                        </tr>
+                        <tr id="tr1" runat="server">
+                            <td class="auto-style10">
+                                <asp:Image ID="imgB1" runat="server" ImageUrl="~/Images/CloseMsg.gif" Width="25px" />
+                            </td>
+                            <td class="auto-style17" colspan="4"><a href ="Message.aspx?id=1">
+                                <asp:Label ID="lblM1" runat="server" Text="Paying electricty and water..."></asp:Label>
+                                </a></td>
+                            <td class="auto-style17">
+                                <asp:ImageButton ID="imgD1" runat="server" ImageUrl="~/Images/RemoveEach.png" Width="25px" />
+                            </td>
+                        </tr>
+                        <tr id="tr2" runat="server">
+                            <td class="auto-style10" colspan="2">
+                                <asp:Image ID="imgB2" runat="server" ImageUrl="~/Images/CloseMsg.gif" Width="25px" />
+                            </td>
+                            <td class="auto-style10" colspan="2"><a href ="Message.aspx?id=2">
+                                <asp:Label ID="lblM2" runat="server" Text="Going to nelspruit for..."></asp:Label>
+                                </a></td>
+                            <td class="auto-style10" colspan="2">
+                                <asp:ImageButton ID="imgD2" runat="server" ImageUrl="~/Images/RemoveEach.png" Width="25px" />
+                            </td>
+                        </tr>
+                        <tr id="tr3" runat="server">
+                            <td class="auto-style10" colspan="2">
+                                <asp:Image ID="imgB3" runat="server" ImageUrl="~/Images/CloseMsg.gif" Width="25px" />
+                            </td>
+                            <td class="auto-style10" colspan="2"><a href ="Message.aspx?id=3">
+                                <asp:Label ID="lblM3" runat="server" Text="Paying transport for..."></asp:Label>
+                                </a></td>
+                            <td class="auto-style10" colspan="2">
+                                <asp:ImageButton ID="imgD3" runat="server" ImageUrl="~/Images/RemoveEach.png" Width="25px" Height="26px" />
+                            </td>
+                        </tr>
+                    </table>
+                    
+
+            </asp:ContentPlaceHolder></td>
+                <td class="auto-style15">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder></td>
+            </tr>
+        </table>
+       
+
     </div>
+
         <div id="bottom">
-            @ACADEMY OF COMPUTER SCIENCE AND SOFTWARE ENGINEERING
+          
+            <table class="auto-style6">
+                <tr>
+                    
+                    <td class="auto-style7">Contactct</td>
+                    <td class="auto-style11" rowspan="2">Download Mobile App</td>
+
+                    <td colspan="4">Get In Touch</td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">Email : Support@mybudgetant.com</td>
+                    <td class="auto-style10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:Image ID="Image3" runat="server" Height="56px" Width="153px" ImageUrl="~/Images/Google-Play-Store.jpg" />
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Image ID="Image4" runat="server" Height="50px" Width="50px" ImageUrl="~/Images/facebook.png" />
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Image ID="Image8" runat="server" Height="50px" Width="50px" ImageUrl="~/Images/Insta.png" />
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Image ID="Image6" runat="server" Height="50px" Width="50px" ImageUrl="~/Images/Linkedin.png" />
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Image ID="Image7" runat="server" Height="50px" Width="50px" ImageUrl="~/Images/Twi.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">(C)Copyright-My Budget Ant 2017-All Rights Reserved</td>
+                </tr>
+            </table>
+          
         </div>
     </form>
 </body>

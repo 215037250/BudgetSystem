@@ -9,6 +9,8 @@
         lblE4.Text = "<a href = EditTask.aspx>Edit</a>"
         lblE5.Text = "<a href = EditTask.aspx>Edit</a>"
         lblE6.Text = "<a href = EditTask.aspx>Edit</a>"
+        Session.Add("Page", "Budget")
+        Session("left") = Nothing
 
 
     End Sub

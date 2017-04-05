@@ -14,24 +14,6 @@ Option Explicit On
 Partial Public Class Login
     
     '''<summary>
-    '''Panel1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
-    
-    '''<summary>
-    '''lblUsername control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblUsername As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
     '''txtUsername control.
     '''</summary>
     '''<remarks>
@@ -41,22 +23,13 @@ Partial Public Class Login
     Protected WithEvents txtUsername As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''lblPass control.
+    '''txtpass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblPass As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''txtPass control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPass As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtpass As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''btnLogin control.

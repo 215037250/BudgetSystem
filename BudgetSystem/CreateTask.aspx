@@ -1,38 +1,38 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Master.Master" CodeBehind="EditTask.aspx.vb" Inherits="BudgetSystem.EditTask" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Master.Master" CodeBehind="CreateTask.aspx.vb" Inherits="BudgetSystem.CreateTask" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   <style type="text/css">
-        .auto-style154 {
+    <style type="text/css">
+        .auto-style153 {
             width: 53%;
             margin-left: 249px;
         }
-        .auto-style164 {
+        .auto-style163 {
             height: 26px;
         }
-        .auto-style184 {
+        .auto-style183 {
             height: 26px;
             text-align: right;
         }
-        .auto-style194 {
+        .auto-style193 {
             height: 26px;
             text-align: justify;
 
         }
-        .auto-style204 {
+        .auto-style203 {
             text-align: center;
             font-size: x-large;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <br /> <br />
-     <table class="auto-style154">
+    <br /> <br />
+    <table class="auto-style153">
         <tr>
-            <td class="auto-style204" colspan="2"><strong>Edit Task<br /><hr />
+            <td class="auto-style203" colspan="2"><strong>Add Task<br /><hr />
                 </strong></td>
         </tr>
         <tr>
-            <td class="auto-style184">&nbsp;Category:</td>
-            <td class="auto-style164">
+            <td class="auto-style183">&nbsp;Category:</td>
+            <td class="auto-style163">
                 <asp:DropDownList ID="ddCategory" runat="server">
                     <asp:ListItem>Choose Category</asp:ListItem>
                     <asp:ListItem>Family</asp:ListItem>
@@ -64,12 +64,12 @@
         <tr>
             <td class="auto-style5">Reminder Date:</td>
             <td>
-                <asp:TextBox ID="txtDate" runat="server" ForeColor="#CCCCCC" TextMode="Date">DD-MM-YYYY</asp:TextBox>
+                <asp:TextBox ID="txtDate" runat="server" ForeColor="#CCCCCC" TextMode="DateTimeLocal">DD-MM-YYYY</asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style184">Amount Needed for Task (R):</td>
-            <td class="auto-style194">
+            <td class="auto-style183">Amount Needed for Task (R):</td>
+            <td class="auto-style193">
                 <asp:TextBox ID="txtAmount" runat="server" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
@@ -87,9 +87,9 @@
         <tr>
             <td>&nbsp;</td>
             <td >
-                <asp:Button ID="btnDone" runat="server" Text="Done Editting" Width="92px" />
+                <asp:Button ID="btnDone" runat="server" Text="Done" Width="79px" />
             </td>
         </tr>
     </table>
-     <br /> <br /><br /> <br />
+    <br /> <br /><br /> <br />
 </asp:Content>
